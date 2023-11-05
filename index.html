@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="gral-container">
+        <div class="calculator-container">
+            <div class="display-container">
+                <input type="text" readonly id="display" class="display"></input>
+            </div>
+            <div class="container-numbs">
+                <button class="numeros" onclick="agregar('1')">1</button>
+                <button class="numeros" onclick="agregar('2')">2</button>
+                <button class="numeros" onclick="agregar('3')">3</button>
+                <button class="operadores" onclick="agregar('+')">+</button>
+                <button class="numeros" onclick="agregar('4')">4</button>
+                <button class="numeros" onclick="agregar('5')">5</button>
+                <button class="numeros" onclick="agregar('6')">6</button>
+                <button class="operadores" onclick="agregar('-')">-</button>
+                <button class="numeros" onclick="agregar('7')">7</button>
+                <button class="numeros" onclick="agregar('8')">8</button>
+                <button class="numeros" onclick="agregar('9')">9</button>
+                <button class="operadores" onclick="agregar('/')">/</button>
+                <button class="numeros" onclick="agregar('0')">0</button>
+                <button class="numeros" onclick="agregar('.')">.</button>
+                <button class="operadores" onclick="borrar()">C</button>
+
+                <button class="operadores" onclick="agregar('*')">*</button>
+                <button class="resultado" onclick="calcular()">=</button>
+            </div>
+        </div>
+</body>
+<script src="app.js"></script>
+
+</html>
